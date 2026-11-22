@@ -1,0 +1,8 @@
+{
+  "module": "Development.WeilBound.CoreStatements.HodgeTatePoints.IsFractionRingOfIntegers",
+  "source_sha256": "435e9b325897149c6a8c40c81fc6b55cc6218210eac17881fed42b1fc5d32241",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Statement change, equivalent: finrank_lattice's hypothesis hM : M.IsLattice K and bc_iso's hypotheses M.IsLattice K and L.IsLattice C become M.FG ∧ Submodule.span K (M : Set Ω) = ⊤ (resp. L.FG ∧ Submodule.span C (L : Set Ω') = ⊤). Mathlib #44365 reused the name IsLattice for a weaker notion without span_eq_top; the pinned IsLattice (Mathlib 0df444a3) is a Prop class with exactly the fields fg and span_eq_top, so the conjunction is the pinned meaning with no condition added or removed. The conjunction is used rather than IsFullLattice for the same reasons as in GcBase (M138355): L has no [IsFractionRing O C] binder, the M and L hypotheses stay symmetric, and it matches HTChart.om_lat (M119662), which downstream callers pass directly. Proofs: hM.span_eq_top becomes hM.2 and hM.fg becomes hM.1. Reused-name and IsLattice audits: 0 hits.",
+  "evidence": "https://github.com/Sheape/alpoge-rh-replay/releases/download/port-P0418-issue-34821/P0418-receipt.json"
+}

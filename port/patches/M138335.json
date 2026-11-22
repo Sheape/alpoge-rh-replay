@@ -1,0 +1,8 @@
+{
+  "module": "Development.WeilBound.CoreStatements.HodgeTatePoints.FamprojAlg",
+  "source_sha256": "9630fd58045bdd909cb94a3e49b0a7d50e1a6dfe14befdb0e7a92fa6a510e6e3",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Proof-only. om'_fg: D.om_lat.fg becomes D.om_lat.1, because the merged import record M119662 restated HTChart.om_lat as om.FG ∧ Submodule.span K om = ⊤ (the pinned IsLattice fields). nonempty_equiv_dual: (F.comp X.subtype).quotKerEquivRange now leaves its [AddCommGroup M] instance stuck against the submodule's AddCommMonoid and times out in whnf, so the domain is supplied as (M := X) on the first call; the rest of the chain then unifies. No declaration statements, definitions or instances changed.",
+  "evidence": "https://github.com/Sheape/alpoge-rh-replay/releases/download/port-P0418-issue-34821/P0418-receipt.json"
+}

@@ -1,0 +1,20 @@
+--- a/src/Development/WeilBound/CoreStatements/HodgeTatePoints/FamprojAlg.lean
++++ b/src/Development/WeilBound/CoreStatements/HodgeTatePoints/FamprojAlg.lean
+@@ -240,7 +240,7 @@
+   Submodule.mem_sup_right ⟨x, hx, rfl⟩
+ 
+ theorem om'_fg [IsNoetherianRing A] : D.om'.FG := by
+-  exact Submodule.FG.of_le D.om_lat.fg (om'_le D)
++  exact Submodule.FG.of_le D.om_lat.1 (om'_le D)
+ 
+ theorem factor_om' (m : Ideal A) [hm : m.IsPrime] (hp : (p : A) ∉ m) :
+     ∃ (N : Type) (_ : AddCommGroup N) (_ : Module A N) (_ : Module.Projective A N)
+@@ -472,7 +472,7 @@
+     rw [LinearMap.range_comp, Submodule.range_subtype]
+   have h2 : LinearMap.range (G.comp X.subtype) = X.map G := by
+     rw [LinearMap.range_comp, Submodule.range_subtype]
+-  exact ⟨(LinearEquiv.ofEq _ _ h1.symm).trans ((F.comp X.subtype).quotKerEquivRange.symm.trans
++  exact ⟨(LinearEquiv.ofEq _ _ h1.symm).trans (((F.comp X.subtype).quotKerEquivRange (M := X)).symm.trans
+     ((Submodule.quotEquivOfEq _ _ hk).trans ((G.comp X.subtype).quotKerEquivRange.trans
+       (LinearEquiv.ofEq _ _ h2))))⟩
+ 

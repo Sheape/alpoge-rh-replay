@@ -1,0 +1,8 @@
+{
+  "module": "Development.WeilBound.CoreStatements.HodgeTatePoints.GaGram",
+  "source_sha256": "fb94bfea01d049e0ded17f953546c762d0c1556486b574fc8d67c5270e00f7a5",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Proof-only: AddMonoidHom.finset_sum_apply was renamed to AddMonoidHom.finsetSum_apply (same statement). No declaration statements, definitions or instances changed.",
+  "evidence": "https://github.com/Sheape/alpoge-rh-replay/releases/download/port-P0418-issue-34821/P0418-receipt.json"
+}

@@ -1,0 +1,8 @@
+{
+  "module": "Development.WeilBound.CoreStatements.HodgeTatePoints.GeneratesDiffMap",
+  "source_sha256": "a58029f33e2b594da94f986a188765977dc04cb84227a6e4b0e58676b6238c91",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "unchanged",
+  "evidence": "https://github.com/Sheape/alpoge-rh-replay/releases/download/port-P0418-issue-34821/P0418-receipt.json"
+}

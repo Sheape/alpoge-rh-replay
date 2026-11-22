@@ -1,0 +1,8 @@
+{
+  "module": "Development.WeilBound.CoreStatements.HodgeTatePoints.GcDescend",
+  "source_sha256": "b1e1587a4474dbf1ed78c613d199576405e152954a48ce0c2e4f07ba5f35e67e",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "unchanged",
+  "evidence": "https://github.com/Sheape/alpoge-rh-replay/releases/download/port-P0418-issue-34821/P0418-receipt.json"
+}

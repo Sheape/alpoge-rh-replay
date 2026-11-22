@@ -1,0 +1,11 @@
+--- a/src/Development/WeilBound/CoreStatements/HodgeTatePoints/GaSurj.lean
++++ b/src/Development/WeilBound/CoreStatements/HodgeTatePoints/GaSurj.lean
+@@ -99,7 +99,7 @@
+   · unfold HTChart.omHT eigQuot
+     apply Submodule.FG.map
+     unfold HTChart.om'
+-    refine Submodule.FG.sup ?_ (Submodule.FG.map _ D.om_lat.fg)
++    refine Submodule.FG.sup ?_ (Submodule.FG.map _ D.om_lat.1)
+     obtain ⟨T, hT⟩ := (Module.Finite.fg_top : (⊤ : Submodule ℤ (Fin N → 𝓞 E)).FG)
+     refine ⟨T.image D.h, le_antisymm ?_ ?_⟩
+     · apply Submodule.span_mono

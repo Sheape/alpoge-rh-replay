@@ -1,0 +1,8 @@
+{
+  "module": "Development.WeilBound.CoreStatements.FlagImmersions.AltCMul",
+  "source_sha256": "025a148dc9e4141096113fdd780a01fb46aa61f169fa48f2862a58ea2d4aa173",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "unchanged",
+  "evidence": "https://github.com/Sheape/alpoge-rh-replay/releases/download/port-P0418-issue-34821/P0418-receipt.json"
+}

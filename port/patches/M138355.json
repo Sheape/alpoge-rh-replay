@@ -1,0 +1,8 @@
+{
+  "module": "Development.WeilBound.CoreStatements.HodgeTatePoints.GcBase",
+  "source_sha256": "325bf2c04fc634405d74244ed8420d4d4445d8808566d8d6bc24adb6810adb0a",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Statement change, equivalent: bc_iso's hypotheses M.IsLattice K and L.IsLattice C become M.FG ∧ Submodule.span K (M : Set Ω) = ⊤ and L.FG ∧ Submodule.span C (L : Set Ω') = ⊤. Mathlib #44365 reused the name IsLattice for a weaker notion without span_eq_top; the pinned IsLattice (Mathlib 0df444a3) is a Prop class with exactly the fields fg : M.FG and span_eq_top : span A M = ⊤, so the conjunction is the pinned meaning with no condition added or removed. The conjunction is used for both hypotheses rather than IsFullLattice for M: L has no [IsFractionRing O C] binder (it only follows from hv), so IsFullLattice there would need an extra argument; one form keeps the two hypotheses symmetric; and it matches HTChart.om_lat from M119662, which the downstream callers (GcChart, RedOmHTBc, ChartMatrices) pass for M unchanged. The proof already used hM.1/hM.2 and hL.1/hL.2 and is unchanged. Reused-name and IsLattice audits: 0 hits.",
+  "evidence": "https://github.com/Sheape/alpoge-rh-replay/releases/download/port-P0418-issue-34821/P0418-receipt.json"
+}
